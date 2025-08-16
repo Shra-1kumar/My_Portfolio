@@ -1,0 +1,269 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+	<meta charset="utf-8" /> 
+	<meta name="viewport" content="width=device-width, initial-scale=1" /> 
+	<title>my first web page</title> 
+	<style>
+		h1,h3,h5{
+			text-align:center;
+		}
+	ul {
+  list-style-type: none;
+  margin:0;
+  padding:0;
+  overflow: hidden;
+  background-color: #6e6969;
+}
+
+li {
+  float: left;
+  border-right:1px solid #bbb;
+}
+
+li:last-child {
+  border-right: none;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #04AA6D;
+}
+		body {
+			background-color: #f0f0f0;
+			font-family: 'Roboto Condensed', sans-serif;
+			margin: 0;
+			padding: 0;
+		}
+		.navbar {
+            display: flex;
+            position: sticky;
+            align-items: center;
+            justify-content: space-between;
+            top: 0px;
+            background: rgba(0, 0, 0, 0.6);
+            background-blend-mode: darken;
+            background-size: cover;
+            color: white;
+            padding: 10px 20px;
+        }
+ 
+        .nav-list {
+            display: flex;
+            list-style: none;
+        }
+ 
+        .nav-list li {
+            margin-right: 20px;
+        }
+		
+.navbar .navbar-nav > li > a {
+line-height: 45px;
+ }
+        .nav-list li:last-child {
+            margin-right: 0;
+        }
+        .nav-list li a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            transition: color 0.3s ease-in-out;
+        }
+ 
+        .nav-list li a:hover {
+            color: #ffd700;
+          
+        }
+ 
+        .rightNav {
+            text-align: right;
+        }
+ 
+        .btn {
+            background-color: #ffd700;
+            color: #000;
+            border: none;
+            padding: 8px 12px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+        }
+ 
+        .btn:hover {
+            background-color: #000;
+           
+            color: #ffd700;
+        }
+
+		.container {
+			width: 90%;
+			margin: auto;
+		}
+
+		.navbar {
+			background-color: #0a193d;
+			color: white !important;
+			padding: 10px 0;
+		}
+
+		.nav-link {
+			color: white !important;
+			padding: 0 10px;
+		}
+
+		.banner {
+			background-color: #0a193d;
+			color: white;
+			padding: 80px 0;
+			text-align: center;
+		}
+
+		.banner h3, .banner p {
+			margin-bottom: 20px;
+		}
+
+		.services {
+			padding: 80px 0;
+			text-align: center;
+		}
+
+		.services h1 {
+			margin-bottom: 50px;
+		}
+
+		.service-col {
+			margin-bottom: 30px;
+		}
+
+		.footer {
+			background-color: #0a193d;
+			color: white;
+			padding: 50px 0;
+			text-align: center;
+		}
+
+		.footer h3 {
+			margin-bottom: 20px;
+		}
+
+		.footer p {
+			margin-bottom: 10px;
+		}
+	</style>
+</head> 
+<body> 
+	<nav class="navbar"> 
+		<div class="container"> 
+			<a class="navbar-brand" href="#" color="white">My First Web Page</a> 
+			<ul class="navbar-nav"> 
+				<li class="nav-item"> 
+					<a class="nav-link active" href="#">Home</a> 
+				</li> 
+				<li class="nav-item"> 
+					<a class="nav-link" href="#services">Services</a> 
+				</li> 
+				<li class="nav-item"> 
+					<a class="nav-link" href="#about">About Us</a> 
+				</li>  
+				<li class="nav-item"> 
+					<a class="nav-link" href="#social">Contact Us</a> 
+				</li> 
+			</ul> 
+		</div> 
+	</nav> 
+
+	<section class="banner"> 
+		<div class="container"> 
+			<h3>WELCOME TO MY NEW WEB PAGE</h3> 
+			<p>Bootstrap is a free, open source front-end development framework for the creation of websites and web apps</p> 
+			<a class="btn btn-primary" href="#contact" role="button">Contact Us</a> 
+		</div> 
+	</section> 
+
+	<section class="services" id="services"> 
+		<div class="container"> 
+			<h1>SERVICES</h1> 
+			<div class="row"> 
+				<div class="col-md-4 service-col"> 
+					<img src="https://img.freepik.com/free-vector/flat-design-travel-landing-page_23-2149170185.jpg" alt="Website Design" /> 
+					<h3>Website Design</h3> 
+					<p>User Experience Design. Website Content Strategy. Cross Browser and Platform Testing.</p> 
+				</div> 
+				
+			</div> 
+		</div> 
+	</section> 
+    <section id="about"> 
+        <h1 class="text-center">About Us</h1> 
+        <div class="container-fluid" id="about-container"> 
+            <div class="row" id="banner-row"> 
+            <div class="col-md-6" id="about-col"> 
+                <h3>Why Us</h3> 
+                <p>
+                    Probuz is all about Delivering High 
+                    Quality web design and development 
+                    services, Cost effective and 
+                    reliable solutions. SCHOOL/COLLEGE MANAGEMENT SOFTWARE (CAMPUS PRO)
+                    Let us take care of your Business needs. 
+                    Customer Productivity is our Priority.  Our expertise in Business includes
+				</p> 
+            </div> 
+            <div class="col-md-6" id="banner-col2"> 
+                <img
+                class="img-responsive rounded mx-auto d-block"
+                src="https://i.stack.imgur.com/I8BJ6.png"height="50%" width="100%"
+                alt="image"
+                /> 
+            </div> 
+            </div> 
+        </div> 
+        </section> 
+        <hr /> 
+
+	<section id="social"> 
+
+		<div class="d-grid gap-2 d-md-flex justify-content-center"> 
+			<div class="row align-items-center" id="social-row"> 
+			<div class="col-md-4 social-col"> 
+					</div> 
+					</div> 
+				</div> 
+				</section> 
+
+	<section class="footer" id="footer"> 
+		<div class="container"> 
+			<div class="row"> 
+				<div class="col-md-4"> 
+					<h3>My Website</h3> 
+					<p>At XYZ we believe that customers should always get easy-to-use, best in the kind and fast services. XYZ has achieved standards which helps customer to achieve satisfaction and realize value for their hard earned money.</p> 
+				</div> 
+				<div class="col-md-4"> 
+					<h3>Contact Us</h3> 
+					<p>Call Us- 9876543216</p> 
+					<p>Email Us- support@xyz.com</p> 
+				</div> 
+				<div class="col-md-4"> 
+					<h3>Subscribe To Newsletter</h3> 
+					<form> 
+						<input type="email" placeholder="Enter Your Email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" /> 
+						<small id="emailHelp" class="form-text">We'll never share your email with anyone else.</small> 
+						<button type="submit" class="btn btn-primary">Submit</button> 
+					</form> 
+				</div> 
+			</div> 
+		</div> 
+	</section> 
+	<h5>copyright &copy; 2023 My Website</h5>
+</body> 
+</html>
